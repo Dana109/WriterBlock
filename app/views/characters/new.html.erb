@@ -1,0 +1,16 @@
+<h1>Create a new character </h1>
+<%= form_for @character do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %><br /><br />
+	<%= f.label :age %>
+	<%= f.text_field :age %><br /><br />
+	<%= f.label :gender %>
+	<%= f.text_field :gender %><br /><br />
+	<%= f.label :place %>
+	<%= f.text_field :place %><br /><br />
+	<%= f.label :bio %>
+	<%= f.text_field :bio %><br /><br />
+	<%= f.label :user %>
+	<%= f.text_field :user %><br /><br />
+	<%= f.submit 'Save'%>
+<% end %>
