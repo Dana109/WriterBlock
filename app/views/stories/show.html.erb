@@ -1,0 +1,8 @@
+<h1><%= @story.title %></h1>
+<small><%= @story.genre %></small><br />
+<small><em>Published by <%= @story.user %> on <%= @story.published_on%></em></small><br /><br />
+<div class = "container">
+	<%= @story.content %><br />
+<%= link_to 'Return to story list', stories_path %>
+
+

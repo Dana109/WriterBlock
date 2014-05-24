@@ -1,0 +1,13 @@
+<h1>All Stories</h1>
+<div class = "well">
+	<% @story.each do |story| %>
+		
+			<%= story.id %>
+			<%= story.title %>
+			<%= story.genre %>
+			<%= story.summary %>
+			<%= link_to "Read", story_path(story) %><br /><br />
+		
+	<% end %>
+</div>
+<%= link_to 'Create a new story', 'stories/new' %>

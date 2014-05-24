@@ -43,3 +43,6 @@ gem 'tzinfo-data', platforms: [:x64_mingw,:mingw, :mswin]
 gem 'tzinfo'
 
 gem 'simple_form'
+
+gem 'devise'
+

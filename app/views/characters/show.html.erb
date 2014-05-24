@@ -1,0 +1,21 @@
+<h1> Character Page </h1>
+<table class="table">
+	<thead>
+	<tr>
+		<td>ID</td>
+		<td>Name</td>
+		<td>Age</td>
+		<td>Gender</td>
+	</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= @character.id %></td>
+			<td><%= @character.name %></td>
+			<td><%= @character.age %></td>
+			<td><%= @character.gender %></td>
+		</tr>
+	</tbody>
+</table>
+
+<%= link_to 'Back to list', '/characters' %>

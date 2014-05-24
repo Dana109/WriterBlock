@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140522221011) do
+ActiveRecord::Schema.define(version: 20140523175412) do
 
   create_table "characters", force: true do |t|
     t.string   "name"
@@ -21,6 +21,30 @@ ActiveRecord::Schema.define(version: 20140522221011) do
     t.string   "bio"
     t.string   "user"
     t.date     "published_on"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pages", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "prompts", force: true do |t|
+    t.string   "content"
+    t.string   "published_on"
+    t.string   "user"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "stories", force: true do |t|
+    t.string   "title"
+    t.string   "genre"
+    t.string   "content"
+    t.date     "published_on"
+    t.string   "summary"
+    t.string   "user"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

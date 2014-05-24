@@ -1,0 +1,8 @@
+<h1>Create a new prompt </h1>
+<%= form_for @prompt do |f| %>
+	<%= f.label :content %>
+	<%= f.text_field :content %><br /><br />
+	<%= f.label :user %>
+	<%= f.text_field :user %><br /><br />
+	<%= f.submit 'Save'%>
+<% end %>

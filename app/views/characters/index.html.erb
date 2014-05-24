@@ -1,3 +1,4 @@
+<h1>All Characters</h1>
 <table class="table">
 	<thead>
 	<tr>
@@ -8,15 +9,15 @@
 	</tr>
 	</thead>
 	<tbody>
-		<% @character.each do |post| %>
+		<% @character.each do |character| %>
 		<tr>
-			<td><%= post.id %></td>
-			<td><%= post.name %></td>
-			<td><%= post.age %></td>
-			<td><%= post.gender %></td>
-			<td><%= link_to "Edit", edit_characters_path(@character.id) %></td>
+			<td><%= character.id %></td>
+			<td><%= character.name %></td>
+			<td><%= character.age %></td>
+			<td><%= character.gender %></td>
+			<td><%= link_to "Edit", edit_character_path(character) %></td>
 		</tr>
 	<% end %>
 	</tbody>
 </table>
-<%= link_to 'Create a new character', 'new' %>
+<%= link_to 'Create a new character', 'characters/new' %>
